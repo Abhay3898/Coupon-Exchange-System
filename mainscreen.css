@@ -1,0 +1,103 @@
+body {
+    background-image: url("images/IMG20211214161843.jpg");
+}
+
+.login {
+    text-align: right;
+    font-size: 18px;
+}
+
+.login a {
+    border: 3px solid black;
+    float: right;
+    padding: 1px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.div1 {
+    border: 3px solid green;
+    background-color: pink;
+    border-bottom-left-radius: 2cm;
+    border-bottom-right-radius: 2cm;
+    text-align: center;
+    align-self: center;
+    height: 150%;
+    font-size: 34px;
+    color: whitesmoke;
+    padding: 10px;
+    text-shadow: 2px 2px 3px black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.div2 {
+    display: flex;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    top: 20rem;
+    box-shadow: 1px 1px 4px black;
+}
+
+.div2>.home {
+    background-color: aqua;
+    color: white;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* flex: 1;*/
+}
+
+.div2>.about,
+.search {
+    text-align: center;
+    padding-left: 40px;
+    align-self: center;
+}
+
+.div2>.search>input[type=text] {
+    padding: 8px 15px 8px 15px;
+    text-size-adjust: 20px;
+    transition: width 0.4s ease-in-out;
+    border-radius: 2px;
+}
+
+.div2>.search>input[type=text]:focus {
+    width: 600%;
+}
+
+.div2>.about {
+    padding-right: 10px;
+}
+
+.div2>.about>a {
+    color: black;
+    text-decoration: none;
+}
+
+.div2>.about>a :hover {
+    color: blue;
+}
+
+.div3 {
+    align-self: center;
+    padding: 40px;
+    padding-left: 40%;
+
+}
+
+.div4 {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.div4 .logo img {
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 1px 5px red;
+    padding: 4px;
+    margin: 5px;
+}

@@ -1,0 +1,160 @@
+header h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: solid;
+    color: rgb(249, 250, 251);
+    text-shadow: 2px 2px 4px rgb(245, 228, 228);
+}
+
+header {
+    background-color: rgb(43, 40, 38);
+}
+
+header .navbar {
+    background-color: rgb(43, 40, 38);
+    border: 2px solid white;
+    display: flex;
+    margin: 0px 0px 15px 0px;
+}
+
+.home {
+    font-size: 30px;
+    text-decoration: none;
+    color: blanchedalmond;
+    flex: 1;
+}
+
+.about {
+    font-size: 20px;
+    text-decoration: none;
+    color: blanchedalmond;
+    flex: 1;
+
+}
+
+.header-form {
+    flex: 10;
+    text-align: right;
+}
+
+#header-search {
+    padding: 4px 8px 4px 4px;
+    border: 2px solid whitesmoke;
+    border-radius: 3px;
+}
+
+#search {
+    color: rgb(33, 165, 222);
+    border: 2px solid rgb(33, 165, 222);
+    background-color: rgb(43, 40, 38);
+    padding: 4px 6px 4px 6px;
+    border-radius: 3px;
+
+}
+
+#search:hover {
+    color: rgb(14, 0, 0);
+    background-color: rgb(151, 221, 242);
+    font-weight: bolder;
+}
+
+.about:hover,
+.home:hover {
+    /* color: rgb(48, 48, 203); */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.one,
+.two {
+    display: flex;
+    height: 400px;
+}
+
+.one-one,
+.one-two,
+.one-three,
+.one-four,
+.two-one,
+.two-two,
+.two-three,
+.two-four {
+    flex: 1;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid brown;
+    box-shadow: 2px 2px 5px black;
+}
+
+.one-one img,
+.one-two img,
+.one-three img,
+.one-four img,
+.two-one img,
+.two-two img,
+.two-three img,
+.two-four img {
+    width: 350px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.one-one p,
+.one-two p,
+.one-three p,
+.one-four p,
+.two-one p,
+.two-two p,
+.two-three p,
+.two-four p {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.one-one button,
+.one-two button,
+.one-three button,
+.one-four button,
+.two-one button,
+.two-two button,
+.two-three button,
+.two-four button {
+    font-weight: 300;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    color: black;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 2px 50px 2px 50px;
+    font-weight: bold;
+}
+
+.one-one button:hover,
+.one-two button:hover,
+.one-three button:hover,
+.one-four button:hover,
+.two-one button:hover,
+.two-two button:hover,
+.two-three button:hover,
+.two-four button:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: gray;
+    color: black;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}

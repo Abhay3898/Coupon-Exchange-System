@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Coupon Exchange</title>
+    <link rel="stylesheet" href="couponpage.css">
+    <style>
+        .bg-text form {
+            border: 2px dotted black;
+            box-shadow: 2px 1px 4px red;
+            text-align: center;
+            margin: 5% 20% 5% 20%;
+            border-radius: 4px;
+        }
+
+        .bg-text input[type="submit"] {
+            width: 30%;
+            padding: 4px 0px 4px 0px;
+            border-radius: 4px;
+        }
+
+        .bg-text form>p>label {
+            background-color: black;
+            color: white;
+        }
+
+        .bg-text header {
+            text-decoration: underline;
+            font-size: 25px;
+            text-shadow: 1px 1px 2px;
+            background-color: burlywood;
+        }
+
+        #containerr {
+            display: flex;
+            height: 100%;
+        }
+
+        .container-one,
+        .container-two {
+            flex: 1;
+            height: 100%;
+        }
+
+        .container-one img {
+            width: 100%;
+        }
+
+        .container-one {
+            background-color: white;
+        }
+
+
+        .bg-image {
+            /* The image used */
+            background-image: url("images/IMG20211214161843.jpg");
+
+            /* Add the blur effect */
+            filter: blur(8px);
+
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-text {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+	#hidden .background {
+		position:absolute;
+		left:0px;
+		top:0px;
+		z-index:-1;
+		width:100%;
+		height:100%;
+		filter:blur(3px);
+	}
+
+	#hidden .hidden_two .confirm_buy {
+		padding : 8px 10px 8px 10px;
+		background-color: #E55451;
+		color: white;
+		font-size:15px;
+		text-align:center;
+	}
+
+	#hidden .hidden_two {
+	    background-color: rgb(0, 0, 0);
+	    /* Fallback color */
+	    background-color: rgba(0, 0, 0, 0.4);
+	    /* Black w/opacity/see-through */
+	    color: white;
+	    font-weight: bold;
+	    border: 3px solid #f1f1f1;
+	    position: absolute;
+	    top: 60%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    z-index: 2;
+	    width: 50%;
+	    height: 50%;
+	    padding: 5px;
+	    text-align: center;
+	    align-content: center;
+	    justify-content: center;
+	    background-image: url("images/backreg4.jpeg");
+	}
+
+	#hidden  .hidden_one {
+	    flex: 1;
+	    height: 100%;
+	    background-image: url("images/backreg4.jpeg");
+	    filter: blur(8px);
+	}
+
+	#hidden  .hidden_one img {
+	    width: 100%;
+	}
+
+	#hidden  .hidden_one {
+	    background-color: white;
+	}
+	#hidden {
+		background-image : url("images/backreg4.jpeg");
+	}
+	.logout {
+	    justify-content: end;
+	    align-self: flex-end;
+	    align-items: flex-end;
+	    align-content: flex-end;
+	    flex: 5;
+	    text-align: right;
+	}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Coupon Exchange</h1>
+        <nav class="navbar">
+            <a href="mainscreen2.html" class="home">Home</a>
+            <a href="about.html" class="about">About</a>
+	    <a href="mainscreen2.html" class="logout">Logout</a>
+        </nav>
+    </header>
+    <div id="container">
+        <div class="one">
+            <div class="one-one">
+                <img src="images/frame0000.png" alt="Image not rendered">
+                <p>Apie</p>
+                <br>
+                <button id="one_one">Sell</button>
+                <button id="one-one">Buy</button>
+            </div>
+            <div class="one-two">
+                <img src="images/frame0001.png" alt="Image not rendered">
+                <p>Flyhigh</p>
+                <br>
+                <button id="one_two">Sell</button>
+                <button id="one-two">Buy</button>
+            </div>
+            <div class="one-three">
+                <img src="images/frame0002.png" alt="Image not rendered">
+                <p>Toyoko</p>
+                <br>
+                <button id="one_three">Sell</button>
+                <button id="one-three">Buy</button>
+            </div>
+            <div class="one-four">
+                <img src="images/frame0003.png" alt="Image not rendered">
+                <p>Dragonball</p>
+                <br>
+                <button id="one_four">Sell</button>
+                <button id="one-four">Buy</button>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-one">
+                <img src="images/frame0004.png" alt="Image not rendered">
+                <p>Pandas</p>
+                <br>
+                <button id="two_one">Sell</button>
+                <button id="two-one">Buy</button>
+            </div>
+            <div class="two-two">
+                <img src="images/frame0005.png" alt="Image not rendered">
+                <p>Souls</p>
+                <br>
+                <button id="two_two">Sell</button>
+                <button id="two-two">Buy</button>
+            </div>
+            <div class="two-three">
+                <img src="images/frame0006.png" alt="Image not rendered">
+                <p>MyWhey</p>
+                <br>
+                <button id="two_three">Sell</button>
+                <button id="two-three">Buy</button>
+            </div>
+            <div class="two-four">
+                <img src="images/frame0007.png" alt="Image not rendered">
+                <p>FinePine</p>
+                <br>
+                <button id="two_four">Sell</button>
+                <button id="two-four">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div id="hidden" style="display: none; height:100%; width:100%;">
+	<div class="hidden_one"> <img class="background" src="images/backreg4.jpeg" alt="hii"> </div>
+	<div class="hidden_two">
+		<form method="post" action="buy.php">
+		    <input type="hidden" name="myVariableInput" id="myVariableInput">
+		    <button type="submit" class="confirm_buy">Confirm buy</button>
+		</form><br><br><br>
+		<button onclick=cancel_button()>Cancel</button>
+	</div>
+    </div>
+
+    <div id="containerr" style="display: none;">
+        <div class="container-one">
+            <img src="images/IMG20211214161843.jpg" alt="image not rendered">
+        </div>
+        <div class="container-two">
+            <div class="bg-image"></div>
+            <div class="bg-text">
+                <form name="frmContact" class="needs-validation " method="post" action="sell.php">
+                    <header>Enter Coupon Details</header>
+                    <p>
+                        <label for="coupon id">Coupon ID : </label>
+                        <input type="text" class="form-control" name="c_id" id="c_id" placeholder="Coupon id" value=""
+                            required>
+                    </p>
+                    <p>
+                        <label for="coupon name">Coupon Name : </label>
+                        <input type="text" class="form-control" name="coupon_name" id="coupon_name"
+                            placeholder="Coupon name" value="" required>
+                    </p>
+                    <!--<p><input type="hidden" name="coupon_name" id="coupon_name"></p>-->
+                    <p>
+                        <label for="discount">Discount : </label>
+                        <input type="text" class="form-control" name="discount" id="discount" placeholder="Discount"
+                            value="" required>
+                    </p>
+                    <p>
+                        <label for="validity">Validity : </label>
+                        <input type="date" textarea name="validity" class="form-control" id="validity"
+                            placeholder="validity" required></textarea>
+                    </p>
+                    <br>
+                    <p>
+                        <input type="submit" name="Submit" id="Submit" value="Submit"
+                            class="btn btn-primary btn-lg btn-block">
+                    </p>
+                </form>
+                <button onclick=cancelButton()>Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>This website is made for you to Exchange your leftover coupons</p>
+        <p>@copywrite 2023 All rights reserved-</p>
+    </footer>
+    <script src="index1.js"></script>
+    <script src="index2.js"></script>
+</body>
+
+</html>

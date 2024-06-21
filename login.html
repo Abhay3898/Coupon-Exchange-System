@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coupon Exchange</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 200%;
+            align-content: center;
+        }
+	img.background {
+		position:absolute;
+		left:0px;
+		top:0px;
+		z-index:-1;
+		width:100%;
+		height:100%;
+		filter:blur(3px);
+	}
+
+        form {
+            border: 1px groove black;
+            margin: 5% 30% 5% 30%;
+            padding: 60px;
+            border-style: auto;
+            background-color: lightsalmon;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-decoration: underline;
+            text-shadow: 5px 5px 5px black;
+	    background-color:white;
+	    color:black;
+        }
+
+        input[type=submit] {
+            padding: 5px;
+            border: 3px solid black;
+            width: 50%;
+
+        }
+
+        input[type=text] {
+            transition: width 0.4s ease-in-out;
+            border-radius: 3px;
+        }
+
+        input[type=text]:focus {
+            width: 60%;
+        }
+
+        input[type=password] {
+            transition: width 0.4s ease-in-out;
+            border-radius: 3px;
+        }
+
+        input[type=password]:focus {
+            width: 60%;
+        }
+    </style>
+	<script>
+		function validateForm() {
+			let x=document.forms["sr"]["user_id"].value;
+			if (x==""){
+				alert("Name must be entered");
+				return false;
+			}
+			let y=document.forms["sr"]["password"].value;
+				if(y==""){
+					alert("Password must be entered");
+					return false;
+			}
+		}
+	</script>
+</head>
+
+<body>
+
+    <h1>Coupon Exchange Login</h1>
+    <img class="background" src="images/IMG20211214161843.jpg" alt="hii">
+    <form name="sr" onsubmit="return validateForm()"method="post" action = "login.php">
+
+        <label for="username">Username : </label>
+        <input type="text" id="user_id" placeholder="username" name="user_id">
+
+        <br>
+
+        <label for="password">Password : </label>
+        <input type="password" id="password" placeholder="xxxxxxxxxx" name="password">
+        <br>
+        <input type="submit" value="Submit">
+
+	</select>
+        <br>
+        <a href="register.html">
+            Register
+        </a>
+    </form>
+
+</body>
+
+</html>

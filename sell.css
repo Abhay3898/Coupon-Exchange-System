@@ -1,0 +1,82 @@
+.home {
+    background-color: aqua;
+    color: black;
+    min-width: 120px;
+    max-width: 200px;
+    height: 36px;
+    border: 2px solid black;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    flex: 1;
+}
+
+.about {
+    background-color: blanchedalmond;
+    color: black;
+    min-width: 120px;
+    max-width: 200px;
+    height: 35px;
+    border: 2px solid black;
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    flex: 1;
+}
+
+.about a :hover,
+.home a :hover {
+    color: blue;
+}
+
+.user_balance {
+    justify-content: end;
+    align-self: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex: 5;
+    text-align: right;
+}
+
+
+
+
+.display_couponDetail {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    background-image: url("images/backreg3.jpeg");
+}
+
+.container-one {
+    flex: 1;
+    height: 100%;
+    background-image: url("images/backreg3.jpeg");
+    filter: blur(8px);
+}
+
+.container-one img {
+    width: 100%;
+}
+
+.container-one {
+    background-color: white;
+}
+
+
+
